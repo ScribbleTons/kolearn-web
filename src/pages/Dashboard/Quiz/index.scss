@@ -1,0 +1,71 @@
+@import '../../../assets/styles/variables';
+
+.search-bar {
+  display: flex;
+  margin: 0 20%;
+  gap: 1rem;
+}
+
+.container {
+  margin: 20px 15%;
+}
+
+.quiz-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.questions,
+.question-preview {
+  flex: 1;
+  max-height: 80vh;
+  overflow: auto;
+}
+
+// Components
+
+// create btn
+.create-btn {
+  margin-bottom: 10px;
+  position: relative;
+  right: 0;
+  left: auto;
+}
+
+// quiz option
+.quiz-option {
+  display: inline-flex;
+  gap: 1rem;
+  width: 100%;
+}
+
+// Question Card
+
+.question {
+  &-card {
+    max-width: 400px;
+    padding: 10px 20px;
+    background-color: #fff;
+    margin: 0 auto 16px;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+    }
+    &-body {
+    }
+
+    h4 {
+      font-size: 14px;
+      color: rgba(0, 0, 0, 0.45);
+    }
+  }
+}
+
+.active-card {
+  background-color: #4a4964;
+  *,
+  div,
+  h4 {
+    color: #f4f4f4;
+  }
+}

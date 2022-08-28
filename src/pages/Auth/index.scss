@@ -1,0 +1,31 @@
+.container {
+  margin: 0 auto;
+}
+
+.auth-form {
+  max-width: 448px;
+  margin: 40px auto;
+  border-radius: 8px;
+  background-color: #fff;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  button {
+    align-self: center;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .secondary-prompt {
+    margin-top: 20px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../assets/styles/variables';
+
+.nav-mobile {
+  list-style: none;
+  li {
+    margin: 1rem 0;
+  }
+
+  .nav-item {
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 24px;
+    &:active {
+      color: $primaryColor;
+    }
+  }
+}

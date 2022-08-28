@@ -1,0 +1,118 @@
+@import '../assets/styles/variables';
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  background-color: $primaryColor;
+  padding: 10px 50px;
+
+  .nav {
+    flex: 0.3;
+    display: flex;
+    justify-content: flex-start;
+
+    .nav-item {
+      margin-right: 30px;
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  .logo-container {
+    position: relative;
+    flex: 0.7;
+    cursor: pointer;
+    height: 3rem;
+
+    img {
+      height: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+    }
+  }
+}
+
+.content-container {
+  padding: 20px;
+}
+
+.layout-container {
+  .hamburger-icon {
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    .header {
+      padding: 0.5em 1em;
+      .logo-container {
+        flex: 0.5;
+        padding: 0;
+      }
+      .nav {
+        display: none;
+      }
+
+      .hamburger-icon {
+        display: block;
+        padding: 6px;
+        color: #fff;
+        cursor: pointer;
+        height: 2.5rem;
+
+        svg {
+          height: 100%;
+          width: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.admin-layout {
+  &-content {
+    margin-top: 64px;
+    height: calc(100vh - 64px);
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    background-color: $primaryColor;
+
+    .nav {
+      flex: 0;
+
+      &-item {
+        margin-left: 30px;
+      }
+      .select-user-type {
+        width: 170px;
+      }
+    }
+  }
+
+  .side-bar {
+    padding-top: 40px;
+    width: 200px;
+    .menu {
+      padding: 10px;
+      width: 100%;
+    }
+
+    .collapse-btn {
+      box-shadow: 1px 1px 2px 2px rgb(134, 90, 237);
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      width: fit-content;
+      margin: 14px auto;
+    }
+  }
+}
